@@ -9,6 +9,8 @@ public class Player_Manager : MonoBehaviour
     public Camera cam1;
     public Camera cam2;
 
+    public static bool isPause;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,11 +32,13 @@ public class Player_Manager : MonoBehaviour
                 cam2.enabled = !cam2.enabled;
                 if (cam2.enabled)
                 {
-                    Time.timeScale = 0;
+                    Cursor.lockState = CursorLockMode.None;
+                    isPause = true;
                 }
                 else
                 {
-                    Time.timeScale = 1;
+                    isPause = false;
+                    Cursor.lockState = CursorLockMode.Locked;
                 }
             }
 
