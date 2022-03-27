@@ -5,7 +5,12 @@
       "ProjectGuid": "a123e8e2-0d35-a091-ee03-f221a9810484",
       "DisplayName": "Assembly-CSharp",
       "ColorIndex": 0
+    },
+    "44c6b860-a195-7536-0971-934302965db0": {
+      "ProjectGuid": "44c6b860-a195-7536-0971-934302965db0",
+      "DisplayName": "Unity.RenderPipelines.Universal.Shaders",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }
