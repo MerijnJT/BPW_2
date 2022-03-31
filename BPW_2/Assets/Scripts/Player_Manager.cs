@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player_Manager : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class Player_Manager : MonoBehaviour
     public Camera cam2;
 
     public static bool isPause;
+
+    public float holdDownStartTime;
+
+    public int currentScene;
 
     // Start is called before the first frame update
     void Start()
@@ -43,5 +48,11 @@ public class Player_Manager : MonoBehaviour
             }
 
         }
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            SceneManager.LoadScene(currentScene);
+        }
+        
     }
 }
