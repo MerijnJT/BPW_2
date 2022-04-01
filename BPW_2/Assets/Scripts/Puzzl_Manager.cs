@@ -40,6 +40,7 @@ public class Puzzl_Manager : MonoBehaviour
         }
         currentBlock = puzzl;
         currentTile = whatTile;
+        
 
         if (currentBlock && previousBlock)
         {
